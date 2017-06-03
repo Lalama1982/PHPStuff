@@ -80,9 +80,7 @@ $connOracle = getConnectionOracle();
 }
 
 // returning the values
-//echo  json_encode(array('display_string' => $display_string, 'dummy' => "xxxxxx"),JSON_FORCE_OBJECT);
 $valReturn = json_encode(array('connsts'=>$connSts." // ".$connStsOralce,'nameerr'=>$nameErr, 'emailerr'=>$emailErr,'websiteerr'=>$websiteErr,'gendererr'=>$genderErr),JSON_FORCE_OBJECT);
-//header("Content-Type: application/json");
 echo ($valReturn);
 
 function test_input($data) { 
@@ -93,6 +91,7 @@ function test_input($data) {
 } 
 
 function IsNullOrEmptyString($val){
-    return (!isset($val) || trim($val)==='');
+  return (!isset($val) || trim($val)==='');
 }
+
 ?>
