@@ -1,0 +1,2 @@
+[01]
+ ajax1.html & ajax-example1.php >>> "php" returns "JSON" object to "AJAX" function : simple demo
